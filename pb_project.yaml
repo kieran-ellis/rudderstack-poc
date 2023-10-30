@@ -15,7 +15,6 @@ entities:
   - name: user
     id_stitcher: models/user_id_graph
     serve_traits:
-      - id_served: email
       - id_served: user_id
       - id_served: anonymous_id
     id_types:
