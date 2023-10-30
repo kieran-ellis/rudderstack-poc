@@ -45,6 +45,14 @@ models:
                 - timestamp desc
             where: state is not null and state!=''
         - entity_var:
+            name: email
+            from: inputs/rsIdentifies
+            select: first_value(email)
+            window:
+              order_by:
+                - timestamp desc
+            where: email is not null
+        - entity_var:
             name: country
             from: inputs/rsIdentifies
             select: first_value(address_country)
