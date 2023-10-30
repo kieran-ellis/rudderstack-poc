@@ -260,4 +260,5 @@ models:
         - campaigns_list
         - mediums_list
         - sources_list
+        - email
 
